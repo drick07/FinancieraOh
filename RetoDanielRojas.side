@@ -1,0 +1,110 @@
+{
+  "id": "0839234a-bde8-4ace-bfbb-2d5fdc5bc8b4",
+  "version": "2.0",
+  "name": "RetoDanielRojas",
+  "url": "https://www.oltursa.pe",
+  "tests": [{
+    "id": "dbc37a33-33a5-445e-8e8a-c20d08542abf",
+    "name": "TestingLogin_01",
+    "commands": [{
+      "id": "18ab33ce-1f92-45b1-b26e-93068307bf71",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82cf2906-7ba5-48b9-b98a-70e31a1b11b6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "546005de-21b0-4bdf-8f39-d221d0fd7309",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Ingresar",
+      "targets": [
+        ["linkText=Ingresar", "linkText"],
+        ["css=.navbar-nav-ingresar > a", "css:finder"],
+        ["xpath=//div[@id='app']/div/nav/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Ingresar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "751c7826-9eef-4cd7-9416-0bdf59291d87",
+      "comment": "",
+      "command": "click",
+      "target": "name=loginUser",
+      "targets": [
+        ["name=loginUser", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='loginUser']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e2fd8f6-bbb5-4da4-b31e-851c7bc91a3d",
+      "comment": "",
+      "command": "type",
+      "target": "name=loginUser",
+      "targets": [
+        ["name=loginUser", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='loginUser']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "mail4testing07@gmail.com"
+    }, {
+      "id": "52d4c2df-445a-4f15-8ff6-1ff7b0e65517",
+      "comment": "",
+      "command": "type",
+      "target": "name=loginPassword",
+      "targets": [
+        ["name=loginPassword", "name"],
+        ["css=.form-group:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//input[@name='loginPassword']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "ADMIN1234567"
+    }, {
+      "id": "99aa886b-a700-4f99-a9f9-aa744abed0e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-modal-verde",
+      "targets": [
+        ["css=.btn-modal-verde", "css:finder"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1811281e-0358-46d1-8ad3-767a735355c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-nav-dropdown",
+      "targets": [
+        ["id=user-nav-dropdown", "id"],
+        ["css=#user-nav-dropdown", "css:finder"],
+        ["xpath=//a[@id='user-nav-dropdown']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/nav/div/div[2]/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "327dc8db-e68a-4b45-bc50-1d2e639be582",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dbc37a33-33a5-445e-8e8a-c20d08542abf"]
+  }],
+  "urls": ["https://www.oltursa.pe/"],
+  "plugins": []
+}
